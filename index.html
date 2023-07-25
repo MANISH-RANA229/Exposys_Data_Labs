@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MassMail Dispatcher</title>
+
+    <!--Google translate-->
+    <div id="google_translate_element"></div>
+ 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+ 
+
+   
+    <div id="google_translate_element"></div>
+   
+
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+
+</head>
+<body>
+    <!-- upload csv file-->
+    <!--THE MENU TO UPLOAD TEXT/CSV FILE-->
+   <div class="bg">
+      <div class="container ">
+        <div class="select animated fadeInDown delay-4s">
+             <h1 style="color: rgb(246, 241, 241);">MASS MAIL DISPATCHER</h1>
+              <input type="file" id="upload" accept="text/csv">
+        </div>
+          <!--THE MESSAGE BOX-->
+            <div class="mailInfo">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                 <h2 id="box-heading">WRITE YOUR MAIL HERE</h2>
+                 <p><input type="email" id="from" placeholder="From (Email ID)" required></p>
+                  <p><input type="text" id="subject" placeholder="Subject" required></p>
+                  <p><textarea id="msg" rows="12" cols="12" placeholder="Body" required></textarea></p>
+                   <p><button type="submit">SEND</button></p>
+                </form>
+            </div>
+        </div>
+    <hr>
+    
+
+
+
+
+
+    <!--VALID AND INVALID MAILS-->
+ <div class="tables">
+    <div class="valTab">
+          <table id="val">
+              <tr>
+                 <td>
+                      <h2>VALID EMAILS: <span id="valCount"></span></h2>
+                 </td>
+                </tr>
+             </table>
+    </div>
+       <div class="invalTab">
+           <table id="inval">
+               <tr>
+                 <td>
+                   <h2>INVALID MAILS: <span id="invalCount"></span></h2>
+                 </td>
+                 </tr>
+             </table>
+        </div>
+ </div>
+    
+</div>
+    <hr>
+
+
+
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="MassMail.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+
+<script>
+        var wow=new WOW (
+        {
+                 boxClass: 'wow',
+                 animateClass: 'animated',
+                offset: 0,
+                mobile: true,
+                live: true,
+                callback: function (box) {
+                },
+
+                scrollcontainer: null,
+                resetAnimation: true,
+        }
+        );
+        wow.init();
+</script>
+
+
+<!--FOOTER DESCRIPTION-->
+<div class="footer-basic">
+    <footer>
+ 
+    </footer>
+    </div>
+
+</body>
+</html>

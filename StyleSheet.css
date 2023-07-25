@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+    h2{
+    color: white;
+    }
+
+
+    body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(36, 32, 32);
+    }
+
+    .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    }
+
+    .select{
+    display: flex;
+    flex-direction: column;
+    }
+    
+    #head{
+    font-size: 50px;
+    text-align: left;
+    }
+
+#box-heading{
+       padding: 5px;
+       margin: auto;
+      text-align: center;
+    }
+
+.mailInfo{
+        width: 500px;
+        position: relative;
+        height: 65%;
+        background-color: rgb(204,211,214);
+        background: linear-gradient (to top left,#ffffffff, #ffffff33);
+        backdrop-filter: blur (8px);
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px #bcddf3;
+        z-index: 2;
+}
+        
+#from, #subject {
+        margin: 14px;
+        padding: 10px;
+        width: 470px;
+        height: 40px;
+        border-radius: 4px;
+}
+        
+#msg{
+        margin: 14px;
+        padding: 10px;
+        width: 40px;
+        width: 470px;
+        border-radius: 4px;
+}
+#submit{
+    width: 10em;
+    height: 3em;
+    margin: 0;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    }
+button{
+    background: #206a5d;
+    color: #e6dede;
+    border: 2px solid #fcfbfb;
+    font-size: 17px;
+    letter-spacing: 2px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 30px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    box-shadow: 0 1px 1px #130b0b;
+    position: absolute;
+    }
+button:hover, button:focus {
+        background-color: rgb(27,177,144);
+        color: #b93d2d;
+        }
+.select input {
+        background-color: rgb(255,255, 255);
+        border: none;
+        margin: 6vh auto;
+        border-radius: 50px;
+        
+        box-shadow: 5px 5px 10px rgb(243, 205, 205);
+        font-weight: 600;
+        font-size: 1rem;
+        outline: none;
+        width: 350px;
+        }
+
+.select input::file-selector-button{
+        background: #206a5d;
+        color: w white;
+        padding: 20px;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0 1px 1px #6b4559;
+        outline: none;
+    }
+
+.select input::file-selector-button:hover{
+        background-color: #438a5e;
+        cursor: pointer;
+        }
+
+.tables{
+        width: 1000px;
+        margin: 0 auto;
+        color: white;
+        }
+
+table{
+     text-align: left;
+     float: left;
+     width: 500px;
+     } 
+     
+hr{
+      width: 70%;
+     margin-left: auto;
+     margin-right: auto;
+      }
+        
+.footer-basic .copyright{
+      margin-top: 15px;
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      font-size: 18px;
+    
+      color: rgb(255, 255, 255);
+      margin-bottom: 0;
+}
